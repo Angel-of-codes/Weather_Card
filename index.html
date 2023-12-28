@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!__ icon css __>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <title>Weather_App</title>
+</head>
+
+<body>
+    <div class="weather_card">
+        <div class="card_head">
+            <i class='bx bx-cloud-snow'></i>
+            <input type="text" name="searchBox" id="searchBox" placeholder="Enter the city" spellcheck="false">
+            <i class='bx bx-search' id="search" onclick="chek_kar()"></i>
+        </div>
+        <div class="current_bx">
+            <div class="details">
+                <h2 class="humidity">humidity : <span id="humidity">__</span>%</h2>
+                <h2 class="tem">temperature : <span id="tem">__</span>°C</h2>
+                <h2 class="windspeed">windspeed : <span id="windspeed">__</span> km/h</h2>
+                <p class="quotes"><span id="quotes"></span> weather</p>
+            </div>
+            <div class="status">
+                <img src="" alt="" class="status_img">
+                <h3 class="Weather_type">__</h3>
+            </div>
+        </div>
+        <div class="more_details">
+            <h3 class="min_temp">min_temp : <span id="min_temp">__</span>°C</h3>
+            <h3 class="max_temp">max_temp : <span id="max_temp">__</span>°C</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
